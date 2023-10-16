@@ -14,6 +14,7 @@ y = df.loc[:, 'CO2EMISSIONS'].values
 # Split into training and testing sets
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=0)
 
+# To give both the fit and predict methods 2D arrays
 x_train = x_train.reshape(-1,1)
 x_test = x_test.reshape(-1,1)
 
